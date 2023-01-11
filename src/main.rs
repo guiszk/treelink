@@ -18,6 +18,11 @@ fn main() {
         }
     }
 
+    // handle argument without https://
+    if ! (arg.starts_with("https://") || arg.starts_with("http://")) {
+        arg = "https://".to_owned() + &arg;
+    }
+
     println!("{}", arg);
     
     // make request

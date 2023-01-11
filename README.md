@@ -15,3 +15,10 @@ This program prints the inner HTML and href values of all `a` elements.
 Omit `-all` to exclude elements with html tags, such as `img` or `svg`.
 
 Use `--all` to include all elements.
+
+## example output
+
+```bash
+https://example.com
+└── More information... -> https://www.iana.org/domains/example
+```
