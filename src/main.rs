@@ -41,7 +41,10 @@ fn main() {
             last = true;
         }
 
-        let val = a.inner_html();
+        let mut val = a.inner_html().to_string();
+        
+        // trim surrounding whitespace
+        val = val.trim().to_string();
 
         // in case href is None
         let mut href = a.value().attr("href");
